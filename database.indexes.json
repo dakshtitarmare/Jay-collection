@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "customers": {
+      ".indexOn": ["nameLower", "mobile"]
+    },
+    "measurementHistory": {
+      "$customerId": {
+        ".indexOn": ["createdAt"]
+      }
+    }
+  }
+}
