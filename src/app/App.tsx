@@ -91,7 +91,7 @@ function Page({ title, children }: { title: string; children: ReactNode }) {
       <header className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-navy">J Collection</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-navy">Jay Collection</p>
             <p className="text-sm text-slate-500">Customer & measurement book</p>
           </div>
           <button className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700 hover:bg-slate-200" onClick={() => void signOut()} type="button">Sign out</button>

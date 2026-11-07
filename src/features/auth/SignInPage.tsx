@@ -30,7 +30,7 @@ export default function SignInPage() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-cream px-4 py-8">
       <section className="card w-full max-w-md">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-navy">J Collection</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-navy">Jay Collection</p>
         <h1 className="mt-3 text-2xl font-semibold text-ink">Owner sign in</h1>
         <p className="mt-2 text-sm text-slate-500">Access customer details and measurement history securely.</p>
 

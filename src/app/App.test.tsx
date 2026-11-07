@@ -15,7 +15,7 @@ describe("application shell", () => {
     );
 
     await waitFor(() => {
-      expect(screen.getByText("J Collection")).toBeTruthy();
+      expect(screen.getByText("Jay Collection")).toBeTruthy();
       expect(screen.getByRole("heading", { name: "Owner sign in" })).toBeTruthy();
     });
   });
