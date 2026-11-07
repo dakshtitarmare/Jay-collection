@@ -1,6 +1,6 @@
 import type { VercelRequest } from "@vercel/node";
-import { ApiError } from "./apiErrors";
-import { getFirebaseAdminAuth } from "./firebaseAdmin";
+import { ApiError } from "./apiErrors.js";
+import { getFirebaseAdminAuth } from "./firebaseAdmin.js";
 
 function getBearerToken(request: VercelRequest) {
   const authorization = request.headers.authorization;

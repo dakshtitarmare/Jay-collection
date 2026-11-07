@@ -1,5 +1,5 @@
 import type { VercelRequest } from "@vercel/node";
-import { ApiError } from "./apiErrors";
+import { ApiError } from "./apiErrors.js";
 
 export const MAX_JSON_BODY_BYTES = 64 * 1024;
 

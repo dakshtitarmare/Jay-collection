@@ -1,5 +1,5 @@
-import { getFirebaseAdminDatabase } from "./firebaseAdmin";
-import type { Customer, MeasurementHistoryRecord } from "./customerTypes";
+import { getFirebaseAdminDatabase } from "./firebaseAdmin.js";
+import type { Customer, MeasurementHistoryRecord } from "./customerTypes.js";
 
 export async function exportCustomers() {
   const database = getFirebaseAdminDatabase();

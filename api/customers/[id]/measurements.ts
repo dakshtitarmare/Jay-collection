@@ -1,13 +1,13 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { randomUUID } from "node:crypto";
-import { requireOwner } from "../../../server/authMiddleware";
-import { allowMethods, sendError, sendSuccess } from "../../../server/apiResponse";
-import { findCustomerById, listMeasurementHistory, writeMeasurement } from "../../../server/customerRepository";
-import { validateMeasurementInput } from "../../../server/customerValidation";
-import type { MeasurementHistoryRecord } from "../../../server/customerTypes";
-import { appendMeasurement, upsertCustomer } from "../../../server/sheetsBackup";
-import { ApiError } from "../../../server/apiErrors";
-import { requireJsonBody } from "../../../server/requestValidation";
+import { requireOwner } from "../../../server/authMiddleware.js";
+import { allowMethods, sendError, sendSuccess } from "../../../server/apiResponse.js";
+import { findCustomerById, listMeasurementHistory, writeMeasurement } from "../../../server/customerRepository.js";
+import { validateMeasurementInput } from "../../../server/customerValidation.js";
+import type { MeasurementHistoryRecord } from "../../../server/customerTypes.js";
+import { appendMeasurement, upsertCustomer } from "../../../server/sheetsBackup.js";
+import { ApiError } from "../../../server/apiErrors.js";
+import { requireJsonBody } from "../../../server/requestValidation.js";
 
 export default async function handler(request: VercelRequest, response: VercelResponse) {
   try {

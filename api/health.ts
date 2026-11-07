@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { allowMethods, sendError, sendSuccess } from "../server/apiResponse";
+import { allowMethods, sendError, sendSuccess } from "../server/apiResponse.js";
 
 export default function handler(request: VercelRequest, response: VercelResponse) {
   try {

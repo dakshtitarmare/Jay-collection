@@ -1,5 +1,5 @@
-import { ApiError } from "./apiErrors";
-import type { MeasurementSet } from "./customerTypes";
+import { ApiError } from "./apiErrors.js";
+import type { MeasurementSet } from "./customerTypes.js";
 
 const mobilePattern = /^\+?[0-9]{10,15}$/;
 

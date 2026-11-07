@@ -1,11 +1,11 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { requireOwner } from "../../server/authMiddleware";
-import { allowMethods, sendError, sendSuccess } from "../../server/apiResponse";
-import { findCustomerById, updateCustomer } from "../../server/customerRepository";
-import { validateCustomerInput } from "../../server/customerValidation";
-import { upsertCustomer } from "../../server/sheetsBackup";
-import { ApiError } from "../../server/apiErrors";
-import { requireJsonBody } from "../../server/requestValidation";
+import { requireOwner } from "../../server/authMiddleware.js";
+import { allowMethods, sendError, sendSuccess } from "../../server/apiResponse.js";
+import { findCustomerById, updateCustomer } from "../../server/customerRepository.js";
+import { validateCustomerInput } from "../../server/customerValidation.js";
+import { upsertCustomer } from "../../server/sheetsBackup.js";
+import { ApiError } from "../../server/apiErrors.js";
+import { requireJsonBody } from "../../server/requestValidation.js";
 
 export default async function handler(request: VercelRequest, response: VercelResponse) {
   try {

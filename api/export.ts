@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { requireOwner } from "../server/authMiddleware";
-import { allowMethods, sendError, sendSuccess } from "../server/apiResponse";
-import { exportCustomers } from "../server/exportRepository";
+import { requireOwner } from "../server/authMiddleware.js";
+import { allowMethods, sendError, sendSuccess } from "../server/apiResponse.js";
+import { exportCustomers } from "../server/exportRepository.js";
 
 export default async function handler(request: VercelRequest, response: VercelResponse) {
   try {

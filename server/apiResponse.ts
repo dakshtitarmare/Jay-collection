@@ -1,5 +1,5 @@
 import type { VercelResponse } from "@vercel/node";
-import { ApiError } from "./apiErrors";
+import { ApiError } from "./apiErrors.js";
 
 export function sendSuccess<T>(response: VercelResponse, data: T, status = 200) {
   return response.status(status).json({ data });

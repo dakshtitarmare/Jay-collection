@@ -1,5 +1,5 @@
 import { google } from "googleapis";
-import type { Customer, MeasurementHistoryRecord } from "./customerTypes";
+import type { Customer, MeasurementHistoryRecord } from "./customerTypes.js";
 
 const customerHeaders = [
   "customerId", "mobile", "name", "email", "age", "status",

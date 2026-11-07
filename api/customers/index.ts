@@ -1,13 +1,13 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { randomUUID } from "node:crypto";
-import { requireOwner } from "../../server/authMiddleware";
-import { allowMethods, sendError, sendSuccess } from "../../server/apiResponse";
-import { findCustomerByMobile, listCustomers, writeCustomer } from "../../server/customerRepository";
-import { validateCustomerInput } from "../../server/customerValidation";
-import type { Customer } from "../../server/customerTypes";
-import { upsertCustomer } from "../../server/sheetsBackup";
-import { ApiError } from "../../server/apiErrors";
-import { requireJsonBody } from "../../server/requestValidation";
+import { requireOwner } from "../../server/authMiddleware.js";
+import { allowMethods, sendError, sendSuccess } from "../../server/apiResponse.js";
+import { findCustomerByMobile, listCustomers, writeCustomer } from "../../server/customerRepository.js";
+import { validateCustomerInput } from "../../server/customerValidation.js";
+import type { Customer } from "../../server/customerTypes.js";
+import { upsertCustomer } from "../../server/sheetsBackup.js";
+import { ApiError } from "../../server/apiErrors.js";
+import { requireJsonBody } from "../../server/requestValidation.js";
 
 export default async function handler(request: VercelRequest, response: VercelResponse) {
   try {
